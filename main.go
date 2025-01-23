@@ -92,9 +92,7 @@ func (c *Solver) printBoard() {
 func (c *Solver) printBestSol() {
 	fmt.Println("------------------------")
 	fmt.Println("Best solution:")
-	for i := range c.bestSol {
-		fmt.Printf("% 3d\n", c.bestSol[i])
-	}
+	c.printBoard()
 	fmt.Println("GCD: ", c.maxGcd)
 	fmt.Println("------------------------")
 }
